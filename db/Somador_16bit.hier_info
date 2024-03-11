@@ -1,0 +1,261 @@
+|Somador_16bit
+a[0] => Somador_1bit:g_generate_for:0:u.a
+a[1] => Somador_1bit:g_generate_for:1:u.a
+a[2] => Somador_1bit:g_generate_for:2:u.a
+a[3] => Somador_1bit:g_generate_for:3:u.a
+a[4] => Somador_1bit:g_generate_for:4:u.a
+a[5] => Somador_1bit:g_generate_for:5:u.a
+a[6] => Somador_1bit:g_generate_for:6:u.a
+a[7] => Somador_1bit:g_generate_for:7:u.a
+a[8] => Somador_1bit:g_generate_for:8:u.a
+a[9] => Somador_1bit:g_generate_for:9:u.a
+a[10] => Somador_1bit:g_generate_for:10:u.a
+a[11] => Somador_1bit:g_generate_for:11:u.a
+a[12] => Somador_1bit:g_generate_for:12:u.a
+a[13] => Somador_1bit:g_generate_for:13:u.a
+a[14] => Somador_1bit:g_generate_for:14:u.a
+a[15] => Somador_1bit:g_generate_for:15:u.a
+b[0] => Somador_1bit:g_generate_for:0:u.b
+b[1] => Somador_1bit:g_generate_for:1:u.b
+b[2] => Somador_1bit:g_generate_for:2:u.b
+b[3] => Somador_1bit:g_generate_for:3:u.b
+b[4] => Somador_1bit:g_generate_for:4:u.b
+b[5] => Somador_1bit:g_generate_for:5:u.b
+b[6] => Somador_1bit:g_generate_for:6:u.b
+b[7] => Somador_1bit:g_generate_for:7:u.b
+b[8] => Somador_1bit:g_generate_for:8:u.b
+b[9] => Somador_1bit:g_generate_for:9:u.b
+b[10] => Somador_1bit:g_generate_for:10:u.b
+b[11] => Somador_1bit:g_generate_for:11:u.b
+b[12] => Somador_1bit:g_generate_for:12:u.b
+b[13] => Somador_1bit:g_generate_for:13:u.b
+b[14] => Somador_1bit:g_generate_for:14:u.b
+b[15] => Somador_1bit:g_generate_for:15:u.b
+cin => Somador_1bit:g_generate_for:0:u.cin
+co <= Somador_1bit:g_generate_for:15:u.co
+s[0] <= Somador_1bit:g_generate_for:0:u.s
+s[1] <= Somador_1bit:g_generate_for:1:u.s
+s[2] <= Somador_1bit:g_generate_for:2:u.s
+s[3] <= Somador_1bit:g_generate_for:3:u.s
+s[4] <= Somador_1bit:g_generate_for:4:u.s
+s[5] <= Somador_1bit:g_generate_for:5:u.s
+s[6] <= Somador_1bit:g_generate_for:6:u.s
+s[7] <= Somador_1bit:g_generate_for:7:u.s
+s[8] <= Somador_1bit:g_generate_for:8:u.s
+s[9] <= Somador_1bit:g_generate_for:9:u.s
+s[10] <= Somador_1bit:g_generate_for:10:u.s
+s[11] <= Somador_1bit:g_generate_for:11:u.s
+s[12] <= Somador_1bit:g_generate_for:12:u.s
+s[13] <= Somador_1bit:g_generate_for:13:u.s
+s[14] <= Somador_1bit:g_generate_for:14:u.s
+s[15] <= Somador_1bit:g_generate_for:15:u.s
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:0:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:1:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:2:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:3:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:4:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:5:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:6:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:7:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:8:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:9:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:10:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:11:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:12:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:13:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:14:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_16bit|Somador_1bit:\g_generate_for:15:u
+a => co.IN0
+a => co.IN0
+a => s.IN0
+b => co.IN1
+b => co.IN1
+b => s.IN1
+cin => co.IN1
+cin => s.IN1
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
