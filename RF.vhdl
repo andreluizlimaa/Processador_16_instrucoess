@@ -6,11 +6,11 @@ entity RF is
         -- inputs
         w_data: in std_logic_vector(15 downto 0);  
         w_addr: in std_logic_vector(3 downto 0); -- Escrita
-        w_wr: in std_logic;               -- Escrita
+        w_wr: in std_logic;                      -- Escrita
         rp_addr: in std_logic_vector(3 downto 0); -- LeituraP
-        rp_rd: in std_logic;               -- LeituraP
+        rp_rd: in std_logic;                      -- LeituraP
         rq_addr: in std_logic_vector(3 downto 0); -- LeituraQ
-        rq_rd: in std_logic;               -- LeituraQ
+        rq_rd: in std_logic;                      -- LeituraQ
         clk: in bit
     
           -- outputs
