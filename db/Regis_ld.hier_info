@@ -1,0 +1,267 @@
+|Regis_ld
+D[0] => Mux2x1:u1.I1[0]
+D[1] => Mux2x1:u1.I1[1]
+D[2] => Mux2x1:u1.I1[2]
+D[3] => Mux2x1:u1.I1[3]
+D[4] => Mux2x1:u1.I1[4]
+D[5] => Mux2x1:u1.I1[5]
+D[6] => Mux2x1:u1.I1[6]
+D[7] => Mux2x1:u1.I1[7]
+D[8] => Mux2x1:u1.I1[8]
+D[9] => Mux2x1:u1.I1[9]
+D[10] => Mux2x1:u1.I1[10]
+D[11] => Mux2x1:u1.I1[11]
+D[12] => Mux2x1:u1.I1[12]
+D[13] => Mux2x1:u1.I1[13]
+D[14] => Mux2x1:u1.I1[14]
+D[15] => Mux2x1:u1.I1[15]
+clk => Regis:u0.clk
+ld => Mux2x1:u1.sel
+Q[0] <= Regis:u0.Q[0]
+Q[1] <= Regis:u0.Q[1]
+Q[2] <= Regis:u0.Q[2]
+Q[3] <= Regis:u0.Q[3]
+Q[4] <= Regis:u0.Q[4]
+Q[5] <= Regis:u0.Q[5]
+Q[6] <= Regis:u0.Q[6]
+Q[7] <= Regis:u0.Q[7]
+Q[8] <= Regis:u0.Q[8]
+Q[9] <= Regis:u0.Q[9]
+Q[10] <= Regis:u0.Q[10]
+Q[11] <= Regis:u0.Q[11]
+Q[12] <= Regis:u0.Q[12]
+Q[13] <= Regis:u0.Q[13]
+Q[14] <= Regis:u0.Q[14]
+Q[15] <= Regis:u0.Q[15]
+
+
+|Regis_ld|Regis:u0
+D[0] => FlipflopD:g_generate_for:0:u.D
+D[1] => FlipflopD:g_generate_for:1:u.D
+D[2] => FlipflopD:g_generate_for:2:u.D
+D[3] => FlipflopD:g_generate_for:3:u.D
+D[4] => FlipflopD:g_generate_for:4:u.D
+D[5] => FlipflopD:g_generate_for:5:u.D
+D[6] => FlipflopD:g_generate_for:6:u.D
+D[7] => FlipflopD:g_generate_for:7:u.D
+D[8] => FlipflopD:g_generate_for:8:u.D
+D[9] => FlipflopD:g_generate_for:9:u.D
+D[10] => FlipflopD:g_generate_for:10:u.D
+D[11] => FlipflopD:g_generate_for:11:u.D
+D[12] => FlipflopD:g_generate_for:12:u.D
+D[13] => FlipflopD:g_generate_for:13:u.D
+D[14] => FlipflopD:g_generate_for:14:u.D
+D[15] => FlipflopD:g_generate_for:15:u.D
+clk => FlipflopD:g_generate_for:0:u.clk
+clk => FlipflopD:g_generate_for:1:u.clk
+clk => FlipflopD:g_generate_for:2:u.clk
+clk => FlipflopD:g_generate_for:3:u.clk
+clk => FlipflopD:g_generate_for:4:u.clk
+clk => FlipflopD:g_generate_for:5:u.clk
+clk => FlipflopD:g_generate_for:6:u.clk
+clk => FlipflopD:g_generate_for:7:u.clk
+clk => FlipflopD:g_generate_for:8:u.clk
+clk => FlipflopD:g_generate_for:9:u.clk
+clk => FlipflopD:g_generate_for:10:u.clk
+clk => FlipflopD:g_generate_for:11:u.clk
+clk => FlipflopD:g_generate_for:12:u.clk
+clk => FlipflopD:g_generate_for:13:u.clk
+clk => FlipflopD:g_generate_for:14:u.clk
+clk => FlipflopD:g_generate_for:15:u.clk
+Q[0] <= FlipflopD:g_generate_for:0:u.Q
+Q[1] <= FlipflopD:g_generate_for:1:u.Q
+Q[2] <= FlipflopD:g_generate_for:2:u.Q
+Q[3] <= FlipflopD:g_generate_for:3:u.Q
+Q[4] <= FlipflopD:g_generate_for:4:u.Q
+Q[5] <= FlipflopD:g_generate_for:5:u.Q
+Q[6] <= FlipflopD:g_generate_for:6:u.Q
+Q[7] <= FlipflopD:g_generate_for:7:u.Q
+Q[8] <= FlipflopD:g_generate_for:8:u.Q
+Q[9] <= FlipflopD:g_generate_for:9:u.Q
+Q[10] <= FlipflopD:g_generate_for:10:u.Q
+Q[11] <= FlipflopD:g_generate_for:11:u.Q
+Q[12] <= FlipflopD:g_generate_for:12:u.Q
+Q[13] <= FlipflopD:g_generate_for:13:u.Q
+Q[14] <= FlipflopD:g_generate_for:14:u.Q
+Q[15] <= FlipflopD:g_generate_for:15:u.Q
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:0:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:1:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:2:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:3:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:4:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:5:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:6:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:7:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:8:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:9:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:10:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:11:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:12:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:13:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:14:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Regis:u0|FlipflopD:\g_generate_for:15:u
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Regis_ld|Mux2x1:u1
+I0[0] => O.IN0
+I0[1] => O.IN0
+I0[2] => O.IN0
+I0[3] => O.IN0
+I0[4] => O.IN0
+I0[5] => O.IN0
+I0[6] => O.IN0
+I0[7] => O.IN0
+I0[8] => O.IN0
+I0[9] => O.IN0
+I0[10] => O.IN0
+I0[11] => O.IN0
+I0[12] => O.IN0
+I0[13] => O.IN0
+I0[14] => O.IN0
+I0[15] => O.IN0
+I1[0] => O.IN0
+I1[1] => O.IN0
+I1[2] => O.IN0
+I1[3] => O.IN0
+I1[4] => O.IN0
+I1[5] => O.IN0
+I1[6] => O.IN0
+I1[7] => O.IN0
+I1[8] => O.IN0
+I1[9] => O.IN0
+I1[10] => O.IN0
+I1[11] => O.IN0
+I1[12] => O.IN0
+I1[13] => O.IN0
+I1[14] => O.IN0
+I1[15] => O.IN0
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+sel => O.IN1
+O[0] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[4] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[5] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[6] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[7] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[8] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[9] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[10] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[11] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[12] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[13] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[14] <= O.DB_MAX_OUTPUT_PORT_TYPE
+O[15] <= O.DB_MAX_OUTPUT_PORT_TYPE
+
+
