@@ -1,14 +1,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-ENTITY cinext IS
-PORT(
-    s2, s1, s0: IN std_logic;
-    cin: OUT std_logic
-);
-END ENTITY;
+entity cinext is
+    port (
+        s2, s1, s0: in std_logic;
+        cin: out std_logic
+    );
+end entity;
 
-ARCHITECTURE comb OF cinext IS
-BEGIN
+architecture main of cinext is
+begin
     cin <= not(s2) and s1 and not(s0); 
-END ARCHITECTURE;
+end architecture;
