@@ -11,7 +11,7 @@ end entity;
 architecture main of Left_Shifter is
 begin
     connect: for k in 0 to 14 generate
-        O(k+1) <= I(k);
+        O(k + 1) <= I(k);
     end generate connect;
 
     O(0) <= '0';
