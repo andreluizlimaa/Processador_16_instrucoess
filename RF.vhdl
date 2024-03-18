@@ -11,11 +11,11 @@ entity RF is
         rp_rd: in std_logic;                      -- LeituraP
         rq_addr: in std_logic_vector(3 downto 0); -- LeituraQ
         rq_rd: in std_logic;                      -- LeituraQ
-        clk: in bit
+        clk: in bit;
     
           -- outputs
         rp_data: out std_logic_vector(15 downto 0);
-        rq_data: out std_logic_vector(15 downto 0); 
+        rq_data: out std_logic_vector(15 downto 0)
       );
     end;
 
@@ -24,10 +24,10 @@ architecture behav of RF is
         port (
           -- inputs
           d: in std_logic_vector(15 downto 0); 
-          clk: in bit
+          clk: in bit;
       
             -- outputs
-        q: out std_logic_vector(15 downto 0);
+        q: out std_logic_vector(15 downto 0)
         );
       end component;
 

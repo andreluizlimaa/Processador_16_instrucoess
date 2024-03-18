@@ -13,8 +13,8 @@ end entity;
 architecture behav of Mux2x1 is
 
     begin
-        -- Instanciar mux
-        g_generate_for: for i in 0 to 15 generate
-            O(i) <= (I1(i) AND sel) Or (I0(i) And Not(sel));
-        end generate g_generate_for;
+      -- Instanciar mux
+      g_generate_for: for i in 0 to 15 generate
+          O(i) <= (I1(i) AND sel) Or (I0(i) And Not(sel));
+      end generate g_generate_for;
 end architecture ; 
