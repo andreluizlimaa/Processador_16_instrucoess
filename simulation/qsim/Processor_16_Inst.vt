@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "03/17/2024 21:50:42"
+// Generated on "03/19/2024 02:23:43"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Reg_File
 // 
@@ -771,56 +771,64 @@ end
 // W_wr
 initial
 begin
-	W_wr = 1'b1;
+	W_wr = 1'b0;
+	W_wr = #5000 1'b1;
 	W_wr = #20000 1'b0;
 end 
 // W_addr[ 3 ]
 initial
 begin
-	W_addr[3] = 1'b1;
+	W_addr[3] = 1'b0;
+	W_addr[3] = #5000 1'b1;
 	W_addr[3] = #20000 1'b0;
 end 
 // W_addr[ 2 ]
 initial
 begin
-	W_addr[2] = 1'b1;
-	W_addr[2] = #20000 1'b0;
+	W_addr[2] = 1'b0;
+	W_addr[2] = #15000 1'b1;
+	W_addr[2] = #10000 1'b0;
 end 
 // W_addr[ 1 ]
 initial
 begin
-	W_addr[1] = 1'b1;
-	W_addr[1] = #20000 1'b0;
+	W_addr[1] = 1'b0;
+	W_addr[1] = #15000 1'b1;
+	W_addr[1] = #10000 1'b0;
 end 
 // W_addr[ 0 ]
 initial
 begin
 	W_addr[0] = 1'b0;
-	W_addr[0] = #10000 1'b1;
+	W_addr[0] = #5000 1'b1;
 	W_addr[0] = #10000 1'b0;
 end 
 // W_data[ 15 ]
 initial
 begin
-	W_data[15] = 1'b1;
+	W_data[15] = 1'b0;
+	W_data[15] = #5000 1'b1;
 	W_data[15] = #10000 1'b0;
 end 
 // W_data[ 14 ]
 initial
 begin
-	W_data[14] = 1'b1;
+	W_data[14] = 1'b0;
+	W_data[14] = #5000 1'b1;
 	W_data[14] = #10000 1'b0;
 end 
 // W_data[ 13 ]
 initial
 begin
-	W_data[13] = 1'b1;
+	W_data[13] = 1'b0;
+	W_data[13] = #5000 1'b1;
 	W_data[13] = #10000 1'b0;
 end 
 // W_data[ 12 ]
 initial
 begin
-	W_data[12] = 1'b1;
+	W_data[12] = 1'b0;
+	W_data[12] = #5000 1'b1;
 	W_data[12] = #10000 1'b0;
 end 
 // W_data[ 11 ]
@@ -836,133 +844,136 @@ end
 // W_data[ 9 ]
 initial
 begin
-	W_data[9] = 1'b1;
-	W_data[9] = #20000 1'b0;
+	W_data[9] = 1'b0;
+	W_data[9] = #5000 1'b1;
+	W_data[9] = #10000 1'b0;
 end 
 // W_data[ 8 ]
 initial
 begin
 	W_data[8] = 1'b0;
+	W_data[8] = #5000 1'b1;
+	W_data[8] = #10000 1'b0;
 end 
 // W_data[ 7 ]
 initial
 begin
-	W_data[7] = 1'b1;
+	W_data[7] = 1'b0;
+	W_data[7] = #15000 1'b1;
 	W_data[7] = #10000 1'b0;
 end 
 // W_data[ 6 ]
 initial
 begin
 	W_data[6] = 1'b0;
+	W_data[6] = #5000 1'b1;
+	W_data[6] = #10000 1'b0;
 end 
 // W_data[ 5 ]
 initial
 begin
-	W_data[5] = 1'b1;
-	W_data[5] = #20000 1'b0;
+	W_data[5] = 1'b0;
+	W_data[5] = #15000 1'b1;
+	W_data[5] = #10000 1'b0;
 end 
 // W_data[ 4 ]
 initial
 begin
 	W_data[4] = 1'b0;
-	W_data[4] = #10000 1'b1;
+	W_data[4] = #5000 1'b1;
 	W_data[4] = #10000 1'b0;
 end 
 // W_data[ 3 ]
 initial
 begin
-	W_data[3] = 1'b1;
+	W_data[3] = 1'b0;
+	W_data[3] = #15000 1'b1;
 	W_data[3] = #10000 1'b0;
 end 
 // W_data[ 2 ]
 initial
 begin
-	W_data[2] = 1'b1;
-	W_data[2] = #10000 1'b0;
+	W_data[2] = 1'b0;
 end 
 // W_data[ 1 ]
 initial
 begin
 	W_data[1] = 1'b0;
-	W_data[1] = #10000 1'b1;
+	W_data[1] = #5000 1'b1;
 	W_data[1] = #10000 1'b0;
 end 
 // W_data[ 0 ]
 initial
 begin
 	W_data[0] = 1'b0;
-	W_data[0] = #10000 1'b1;
-	W_data[0] = #10000 1'b0;
+	W_data[0] = #5000 1'b1;
+	W_data[0] = #20000 1'b0;
 end 
 
 // Rp_rd
 initial
 begin
 	Rp_rd = 1'b0;
-	Rp_rd = #10000 1'b1;
-	Rp_rd = #20000 1'b0;
+	Rp_rd = #5000 1'b1;
+	Rp_rd = #30000 1'b0;
 end 
 // Rp_addr[ 3 ]
 initial
 begin
 	Rp_addr[3] = 1'b0;
-	Rp_addr[3] = #10000 1'b1;
+	Rp_addr[3] = #15000 1'b1;
 	Rp_addr[3] = #20000 1'b0;
 end 
 // Rp_addr[ 2 ]
 initial
 begin
 	Rp_addr[2] = 1'b0;
-	Rp_addr[2] = #10000 1'b1;
-	Rp_addr[2] = #20000 1'b0;
 end 
 // Rp_addr[ 1 ]
 initial
 begin
 	Rp_addr[1] = 1'b0;
-	Rp_addr[1] = #10000 1'b1;
-	Rp_addr[1] = #20000 1'b0;
 end 
 // Rp_addr[ 0 ]
 initial
 begin
 	Rp_addr[0] = 1'b0;
+	Rp_addr[0] = #15000 1'b1;
+	Rp_addr[0] = #20000 1'b0;
 end 
 
 // Rq_rd
 initial
 begin
 	Rq_rd = 1'b0;
-	Rq_rd = #10000 1'b1;
-	Rq_rd = #20000 1'b0;
+	Rq_rd = #5000 1'b1;
+	Rq_rd = #30000 1'b0;
 end 
 // Rq_addr[ 3 ]
 initial
 begin
 	Rq_addr[3] = 1'b0;
-	Rq_addr[3] = #10000 1'b1;
+	Rq_addr[3] = #15000 1'b1;
 	Rq_addr[3] = #20000 1'b0;
 end 
 // Rq_addr[ 2 ]
 initial
 begin
 	Rq_addr[2] = 1'b0;
-	Rq_addr[2] = #10000 1'b1;
+	Rq_addr[2] = #15000 1'b1;
 	Rq_addr[2] = #20000 1'b0;
 end 
 // Rq_addr[ 1 ]
 initial
 begin
 	Rq_addr[1] = 1'b0;
-	Rq_addr[1] = #10000 1'b1;
+	Rq_addr[1] = #15000 1'b1;
 	Rq_addr[1] = #20000 1'b0;
 end 
 // Rq_addr[ 0 ]
 initial
 begin
 	Rq_addr[0] = 1'b0;
-	Rq_addr[0] = #10000 1'b1;
-	Rq_addr[0] = #20000 1'b0;
 end 
 
 Reg_File_vlg_sample_tst tb_sample (

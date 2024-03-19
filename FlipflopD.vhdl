@@ -9,11 +9,21 @@ entity FlipflopD is
 end entity;
 
 architecture main of FlipflopD is
+	signal Q_D: std_logic;
+
+	component LatchD is
+		port (
+			D, clk: in std_logic;
+			Q: out std_logic := '0'
+		);
+	end component;
 begin
-	process (D,clk)
-	begin
-		if(clk' event and clk = '1') then
-			Q <= D;
-		end if;
-	end process;
+	
+	L1: LatchD port map (
+		D => D, clk => not(clk), Q => Q_D
+	);
+
+	L2: LatchD port map (
+		D => Q_D, clk => clk, Q => Q
+	);
 end architecture;
