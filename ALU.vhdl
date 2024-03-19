@@ -15,6 +15,7 @@ architecture main of ALU is
     signal ia_A: std_logic_vector(15 downto 0);
     signal ib_B: std_logic_vector(15 downto 0);
     signal S_RLMO: std_logic_vector(15 downto 0);
+    signal B_S: std_logic_vector(3 downto 0);
     signal OR_i1: std_logic_vector(15 downto 0);
     signal OL_i0: std_logic_vector(15 downto 0);
     signal OM_i1M: std_logic_vector(15 downto 0);
@@ -44,6 +45,7 @@ architecture main of ALU is
     component Right_Shifter is
         port (
             I: in std_logic_vector(15 downto 0);
+            S: in std_logic_vector(3 downto 0);
             O: out std_logic_vector(15 downto 0)
         );
     end component;
@@ -51,6 +53,7 @@ architecture main of ALU is
     component Left_Shifter is
         port (
             I: in std_logic_vector(15 downto 0);
+            S: in std_logic_vector(3 downto 0);
             O: out std_logic_vector(15 downto 0)
         );
     end component;
@@ -80,12 +83,14 @@ begin
         A => ia_A, B => ib_B, Ci => ci_ci, s => S_RLMO
     );
 
+    B_S <= B(3 downto 0);
+
     rs: Right_Shifter port map (
-        I => S_RLMO, O => OR_i1
+        I => S_RLMO, O => OR_i1, S => B_S
     );
 
     ls: Left_Shifter port map (
-        I => S_RLMO, O => OL_i0
+        I => S_RLMO, O => OL_i0, S => B_S
     );
 
     MSh: Mux2x1_16bit port map (

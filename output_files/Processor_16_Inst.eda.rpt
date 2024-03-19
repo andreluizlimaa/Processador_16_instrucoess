@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Processor_16_Inst
-Tue Mar 19 02:23:44 2024
+Tue Mar 19 18:35:15 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Mar 19 02:23:44 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Mar 19 18:35:15 2024 ;
 ; Revision Name             ; Processor_16_Inst                     ;
-; Top-level Entity Name     ; Reg_File                              ;
+; Top-level Entity Name     ; Right_Shifter                         ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 19 02:23:43 2024
+    Info: Processing started: Tue Mar 19 18:35:14 2024
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Processor_16_Inst -c Processor_16_Inst
 Info (119006): Selected device EP2C35F672C6 for design "Processor_16_Inst"
 Info (204019): Generated file Processor_16_Inst.vo in folder "C:/Projetos/github/Processador_16_instrucoess/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4523 megabytes
-    Info: Processing ended: Tue Mar 19 02:23:44 2024
+    Info: Peak virtual memory: 4518 megabytes
+    Info: Processing ended: Tue Mar 19 18:35:15 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
