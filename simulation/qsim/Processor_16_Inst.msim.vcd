@@ -3,7 +3,7 @@ $comment
 		vcd file Processor_16_Inst.msim.vcd -direction
 $end
 $date
-	Tue Mar 19 18:35:16 2024
+	Tue Mar 26 10:21:53 2024
 $end
 $version
 	ModelSim Version 10.1d
@@ -11,721 +11,272 @@ $end
 $timescale
 	1ps
 $end
-$scope module Right_Shifter_vlg_vec_tst $end
-$var reg 16 ! I [15:0] $end
-$var reg 4 " S [3:0] $end
-$var wire 1 # O [15] $end
-$var wire 1 $ O [14] $end
-$var wire 1 % O [13] $end
-$var wire 1 & O [12] $end
-$var wire 1 ' O [11] $end
-$var wire 1 ( O [10] $end
-$var wire 1 ) O [9] $end
-$var wire 1 * O [8] $end
-$var wire 1 + O [7] $end
-$var wire 1 , O [6] $end
-$var wire 1 - O [5] $end
-$var wire 1 . O [4] $end
-$var wire 1 / O [3] $end
-$var wire 1 0 O [2] $end
-$var wire 1 1 O [1] $end
-$var wire 1 2 O [0] $end
-$var wire 1 3 sampler $end
+$scope module Comparator_LG_1bit_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # ie $end
+$var reg 1 $ ig $end
+$var reg 1 % il $end
+$var wire 1 & e $end
+$var wire 1 ' g $end
+$var wire 1 ( l $end
+$var wire 1 ) sampler $end
 $scope module i1 $end
-$var wire 1 4 gnd $end
-$var wire 1 5 vcc $end
-$var wire 1 6 unknown $end
-$var tri1 1 7 devclrn $end
-$var tri1 1 8 devpor $end
-$var tri1 1 9 devoe $end
-$var wire 1 : m|O~1_combout $end
-$var wire 1 ; m|O~7_combout $end
-$var wire 1 < m|O~10_combout $end
-$var wire 1 = inst:2:m|O~12_combout $end
-$var wire 1 > inst:1:m|O~21_combout $end
-$var wire 1 ? inst:1:m|O~7_combout $end
-$var wire 1 @ inst:2:m|O~3_combout $end
-$var wire 1 A inst:3:m|O~4_combout $end
-$var wire 1 B inst:4:m|O~4_combout $end
-$var wire 1 C m|O~2_combout $end
-$var wire 1 D m|O~3_combout $end
-$var wire 1 E m|O~4_combout $end
-$var wire 1 F m|O~16_combout $end
-$var wire 1 G m|O~5_combout $end
-$var wire 1 H m|O~6_combout $end
-$var wire 1 I m|O~8_combout $end
-$var wire 1 J m|O~9_combout $end
-$var wire 1 K m|O~11_combout $end
-$var wire 1 L m|O~12_combout $end
-$var wire 1 M m|O~13_combout $end
-$var wire 1 N m|O~14_combout $end
-$var wire 1 O m|O~15_combout $end
-$var wire 1 P inst:2:m|O~6_combout $end
-$var wire 1 Q m|O~17_combout $end
-$var wire 1 R inst:2:m|O~7_combout $end
-$var wire 1 S inst:1:m|O~10_combout $end
-$var wire 1 T inst:1:m|O~11_combout $end
-$var wire 1 U inst:1:m|O~12_combout $end
-$var wire 1 V inst:1:m|O~13_combout $end
-$var wire 1 W inst:1:m|O~22_combout $end
-$var wire 1 X inst:3:m|O~9_combout $end
-$var wire 1 Y inst:1:m|O~16_combout $end
-$var wire 1 Z inst:1:m|O~17_combout $end
-$var wire 1 [ inst:13:m|O~0_combout $end
-$var wire 1 \ inst:1:m|O~18_combout $end
-$var wire 1 ] inst:1:m|O~19_combout $end
-$var wire 1 ^ inst:1:m|O~20_combout $end
-$var wire 1 _ inst:2:m|O~8_combout $end
-$var wire 1 ` inst:2:m|O~9_combout $end
-$var wire 1 a inst:2:m|O~10_combout $end
-$var wire 1 b inst:2:m|O~11_combout $end
-$var wire 1 c inst:2:m|O~17_combout $end
-$var wire 1 d inst:2:m|O~13_combout $end
-$var wire 1 e m|O~0_combout $end
-$var wire 1 f inst:2:m|O~14_combout $end
-$var wire 1 g inst:2:m|O~15_combout $end
-$var wire 1 h inst:2:m|O~16_combout $end
-$var wire 1 i inst:15:m|O~4_combout $end
-$var wire 1 j inst:3:m|O~10_combout $end
-$var wire 1 k inst:3:m|O~15_combout $end
-$var wire 1 l inst:3:m|O~11_combout $end
-$var wire 1 m inst:4:m|O~9_combout $end
-$var wire 1 n inst:4:m|O~10_combout $end
-$var wire 1 o inst:3:m|O~12_combout $end
-$var wire 1 p inst:3:m|O~13_combout $end
-$var wire 1 q inst:3:m|O~14_combout $end
-$var wire 1 r inst:4:m|O~11_combout $end
-$var wire 1 s inst:4:m|O~12_combout $end
-$var wire 1 t inst:4:m|O~16_combout $end
-$var wire 1 u inst:4:m|O~13_combout $end
-$var wire 1 v inst:4:m|O~14_combout $end
-$var wire 1 w inst:4:m|O~15_combout $end
-$var wire 1 x inst:13:m|O~1_combout $end
-$var wire 1 y inst:5:m|O~0_combout $end
-$var wire 1 z inst:5:m|O~1_combout $end
-$var wire 1 { inst:5:m|O~2_combout $end
-$var wire 1 | inst:5:m|O~3_combout $end
-$var wire 1 } inst:5:m|O~4_combout $end
-$var wire 1 ~ inst:1:m|O~14_combout $end
-$var wire 1 !! inst:1:m|O~15_combout $end
-$var wire 1 "! inst:5:m|O~5_combout $end
-$var wire 1 #! inst:5:m|O~6_combout $end
-$var wire 1 $! inst:8:m|O~0_combout $end
-$var wire 1 %! inst:6:m|O~0_combout $end
-$var wire 1 &! inst:10:m|O~0_combout $end
-$var wire 1 '! inst:6:m|O~1_combout $end
-$var wire 1 (! inst:6:m|O~2_combout $end
-$var wire 1 )! inst:12:m|O~0_combout $end
-$var wire 1 *! inst:6:m|O~3_combout $end
-$var wire 1 +! inst:7:m|O~0_combout $end
-$var wire 1 ,! inst:7:m|O~1_combout $end
-$var wire 1 -! inst:9:m|O~0_combout $end
-$var wire 1 .! inst:7:m|O~2_combout $end
-$var wire 1 /! inst:7:m|O~3_combout $end
-$var wire 1 0! inst:7:m|O~4_combout $end
-$var wire 1 1! inst:7:m|O~5_combout $end
-$var wire 1 2! inst:8:m|O~1_combout $end
-$var wire 1 3! inst:8:m|O~2_combout $end
-$var wire 1 4! inst:8:m|O~3_combout $end
-$var wire 1 5! inst:9:m|O~1_combout $end
-$var wire 1 6! inst:13:m|O~2_combout $end
-$var wire 1 7! inst:9:m|O~2_combout $end
-$var wire 1 8! inst:9:m|O~3_combout $end
-$var wire 1 9! inst:10:m|O~1_combout $end
-$var wire 1 :! inst:10:m|O~2_combout $end
-$var wire 1 ;! inst:11:m|O~6_combout $end
-$var wire 1 <! inst:11:m|O~4_combout $end
-$var wire 1 =! inst:11:m|O~5_combout $end
-$var wire 1 >! inst:12:m|O~1_combout $end
-$var wire 1 ?! inst:13:m|O~3_combout $end
-$var wire 1 @! inst:14:m|O~4_combout $end
-$var wire 1 A! inst:15:m|O~5_combout $end
-$var wire 1 B! S~combout [3] $end
-$var wire 1 C! S~combout [2] $end
-$var wire 1 D! S~combout [1] $end
-$var wire 1 E! S~combout [0] $end
-$var wire 1 F! I~combout [15] $end
-$var wire 1 G! I~combout [14] $end
-$var wire 1 H! I~combout [13] $end
-$var wire 1 I! I~combout [12] $end
-$var wire 1 J! I~combout [11] $end
-$var wire 1 K! I~combout [10] $end
-$var wire 1 L! I~combout [9] $end
-$var wire 1 M! I~combout [8] $end
-$var wire 1 N! I~combout [7] $end
-$var wire 1 O! I~combout [6] $end
-$var wire 1 P! I~combout [5] $end
-$var wire 1 Q! I~combout [4] $end
-$var wire 1 R! I~combout [3] $end
-$var wire 1 S! I~combout [2] $end
-$var wire 1 T! I~combout [1] $end
-$var wire 1 U! I~combout [0] $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 il~combout $end
+$var wire 1 1 ig~combout $end
+$var wire 1 2 A~combout $end
+$var wire 1 3 B~combout $end
+$var wire 1 4 e~0_combout $end
+$var wire 1 5 ie~combout $end
+$var wire 1 6 l~0_combout $end
+$var wire 1 7 g~0_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b1110000001111110 !
-b0 "
-02
-11
-10
-1/
-1.
-1-
-1,
-0+
-0*
-0)
-0(
-0'
-0&
-1%
-1$
-1#
-x3
-04
-15
-x6
-17
-18
-19
-1:
-0;
-0<
-0=
-0>
-0?
-0@
-0A
-1B
-0C
-0D
-0E
-0F
-0G
-0H
-0I
-1J
-0K
-0L
-0M
-0N
-0O
-0P
-0Q
-0R
-0S
-0T
-0U
-0V
-0W
-1X
-1Y
-0Z
-1[
-1\
-1]
-1^
-0_
-0`
-0a
-0b
-0c
-1d
-0e
-1f
-1g
-1h
-1i
-0j
-0k
-1l
-0m
-0n
-0o
-0p
-1q
-1r
-1s
-0t
-1u
-0v
-1w
-0x
-1y
-0z
-0{
-0|
-0}
-1~
-0!!
-0"!
-1#!
-0$!
-1%!
-0&!
-0'!
-0(!
-1)!
-1*!
-0+!
-0,!
-0-!
-0.!
-0/!
-00!
-01!
-02!
-03!
-04!
-05!
-16!
-07!
-08!
-09!
-0:!
-0;!
-0<!
-0=!
-0>!
-1?!
-1@!
-1A!
-0E!
-0D!
-0C!
-0B!
-0U!
-1T!
-1S!
-1R!
-1Q!
-1P!
-1O!
-0N!
-0M!
-0L!
-0K!
-0J!
-0I!
-1H!
-1G!
-1F!
-$end
-#62500
-b1 "
-1E!
-03
-1&!
-0~
-0r
-0i
-1O
-1>!
-0%!
-0A!
-12
-0*!
-1&
+0!
+0"
 0#
-0,
-#125000
-b11 "
-b10 "
-0E!
-1D!
-13
-0&!
-1~
-1x
-1r
-1i
-0O
-0@!
-1;!
-1e
-0[
-1A
-1@
-0y
-1=!
-1Z
-1<
-0d
-0]
-02
 0$
-0#!
-1]
-1N
-0^
-1'
-1^
-1O
-0-
-01
-11
-12
-#187500
-b11 "
-1E!
-03
-1&!
-0~
-0x
-0r
-0i
-19!
-0?!
-0s
-1:!
-0u
 0%
-0w
-1(
-0.
-#250000
-b111 "
-b101 "
-b100 "
-0E!
-0D!
-1C!
-13
-0&!
-1~
-1r
-1i
-0;!
-0e
-1D
-0A
-1?
-0>!
-09!
-1<!
-0=!
-17!
-0l
-0g
-0<
-0:
-1K
-1E
-1=
-1=!
-18!
-0q
-0h
-1g
-0&
-0'
-1h
+1&
 1'
-1)
-0/
-00
-10
-#312500
-b101 "
-1E!
-03
-1&!
-0~
-0r
-0i
-0=
-12!
-0<!
-0g
-14!
-0=!
-0h
-1*
-0'
-00
-#375000
-b111 "
-b110 "
-0E!
-1D!
-13
-0&!
-1~
-1r
-1i
-1=
-0D
-1C
-1A
-0@
-0?
-15!
-1g
-0:!
-07!
-0Z
-0E
-0=
-10!
-1h
-0]
-0J
-0g
-11!
-0(
-0^
-0h
-10
-1+
-01
-00
-#437500
-b111 "
-1E!
-03
-01!
-1&!
-0~
-0r
-0i
-1a
-0O
-1(!
-05!
-1,!
-0+
-02
-1*!
-08!
-11!
-1,
-0)
-1+
-#500000
-b1111 "
-b1011 "
-b1001 "
-b1000 "
-0E!
-0D!
-0C!
-1B!
-13
-0&!
-1~
-1r
-1k
-1i
-0a
-1O
-1G
-0C
-0A
-02!
-0(!
-1"!
-1q
-0,!
-1{
-0K
-0k
-12
-04!
-1#!
-0N
-0q
-1/
-0O
+1(
+x)
 0*
-1-
-0/
-02
-#562500
-b1001 "
-1E!
-03
-01!
-1&!
-0~
-1|
-1t
-0r
-0i
-0"!
-1u
-0+
-1w
-1.
-#625000
-b1011 "
-b1010 "
-0E!
-1D!
-13
-11!
-0&!
-1~
-0|
-1x
-0t
-1r
-1i
-0G
-1F
-1A
-1@
-0#!
-1y
-0u
-00!
-0*!
-0{
-1n
-1k
 1+
-1#!
-0w
-01!
-1v
-1q
-0-
-0,
-1w
+x,
 1-
-0.
-0+
+1.
 1/
-1.
-#687500
-b1011 "
-1E!
-03
-1&!
-0~
-0x
-0v
-1t
-0r
-1p
-0k
-0i
-1c
-0y
-0w
-1u
-1h
-0#!
-1w
-0.
-10
-0-
-1.
-#750000
-b1111 "
-b1101 "
-b1100 "
-0E!
-0D!
-1C!
-13
-0&!
-1~
-1v
-0t
-1r
-0p
-1i
-0c
-1Q
-0F
-0A
-1?
-1;
-0u
-0q
-1j
-0h
-1R
-0n
-1W
-1I
-1q
-1_
-0v
-1^
-1J
-0/
 00
-1h
-0w
-1/
-11
-10
-0.
-#812500
-b1101 "
-1E!
-03
-1&!
-0~
-0r
-0i
-1c
-0_
-0W
-1S
-1O
-0j
-12
-0q
-0/
-#875000
-b1111 "
-b1110 "
-0E!
-1D!
-13
-0&!
-1~
-1r
-1i
-0c
-1_
-1W
-0S
-0O
-0Q
-1M
-1A
-0@
-0?
-1>
-0R
-1N
-0W
+01
 02
-1]
-0_
-1O
-0^
-1^
-0h
-12
-01
-11
-00
-#937500
-b1111 "
-1E!
 03
-1&!
-0~
-0r
-0i
-0>
-0]
-0^
+04
+05
+16
+17
+$end
+#32000
+1"
+13
+0)
+14
+0&
+#64000
+1!
+0"
+12
+03
+1)
+#96000
+1"
+13
+0)
+04
+1&
+#128000
+1$
+0!
+0"
+11
+02
+03
+1)
+06
+14
+0(
+0&
+#160000
+1"
+13
+0)
+#192000
+1!
+0"
+12
+03
+1)
+#224000
+1"
+13
+0)
+#256000
+1%
+0$
+0!
+0"
+10
 01
-#1000000
+02
+03
+1)
+07
+16
+0'
+1(
+#288000
+1"
+13
+0)
+#320000
+1!
+0"
+12
+03
+1)
+#352000
+1"
+13
+0)
+#384000
+1$
+0!
+0"
+11
+02
+03
+1)
+06
+0(
+#416000
+1"
+13
+0)
+#448000
+1!
+0"
+12
+03
+1)
+#480000
+1"
+13
+0)
+#512000
+1#
+0%
+0$
+0!
+0"
+15
+00
+01
+02
+03
+1)
+04
+1&
+#544000
+1"
+13
+0)
+16
+14
+1(
+0&
+#576000
+1!
+0"
+12
+03
+1)
+17
+06
+1'
+0(
+#608000
+1"
+13
+0)
+07
+04
+0'
+1&
+#640000
+1$
+0!
+0"
+11
+02
+03
+1)
+14
+0&
+#672000
+1"
+13
+0)
+#704000
+1!
+0"
+12
+03
+1)
+17
+1'
+#736000
+1"
+13
+0)
+07
+0'
+#768000
+1%
+0$
+0!
+0"
+10
+01
+02
+03
+1)
+#800000
+1"
+13
+0)
+16
+1(
+#832000
+1!
+0"
+12
+03
+1)
+06
+0(
+#864000
+1"
+13
+0)
+#896000
+1$
+0!
+0"
+11
+02
+03
+1)
+#928000
+1"
+13
+0)
+#960000
+1!
+0"
+12
+03
+1)
+#992000
+1"
+13
+0)
+#1024000
