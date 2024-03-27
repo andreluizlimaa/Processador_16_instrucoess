@@ -1,38 +1,44 @@
 |Comparator_LG_16bit
-A[0] => Comparator_LG_1bit:inst:15:comp.A
-A[1] => Comparator_LG_1bit:inst:14:comp.A
-A[2] => Comparator_LG_1bit:inst:13:comp.A
-A[3] => Comparator_LG_1bit:inst:12:comp.A
-A[4] => Comparator_LG_1bit:inst:11:comp.A
-A[5] => Comparator_LG_1bit:inst:10:comp.A
-A[6] => Comparator_LG_1bit:inst:9:comp.A
-A[7] => Comparator_LG_1bit:inst:8:comp.A
-A[8] => Comparator_LG_1bit:inst:7:comp.A
-A[9] => Comparator_LG_1bit:inst:6:comp.A
-A[10] => Comparator_LG_1bit:inst:5:comp.A
-A[11] => Comparator_LG_1bit:inst:4:comp.A
-A[12] => Comparator_LG_1bit:inst:3:comp.A
-A[13] => Comparator_LG_1bit:inst:2:comp.A
-A[14] => Comparator_LG_1bit:inst:1:comp.A
-A[15] => Comparator_LG_1bit:inst:0:comp.A
-B[0] => Comparator_LG_1bit:inst:15:comp.B
-B[1] => Comparator_LG_1bit:inst:14:comp.B
-B[2] => Comparator_LG_1bit:inst:13:comp.B
-B[3] => Comparator_LG_1bit:inst:12:comp.B
-B[4] => Comparator_LG_1bit:inst:11:comp.B
-B[5] => Comparator_LG_1bit:inst:10:comp.B
-B[6] => Comparator_LG_1bit:inst:9:comp.B
-B[7] => Comparator_LG_1bit:inst:8:comp.B
-B[8] => Comparator_LG_1bit:inst:7:comp.B
-B[9] => Comparator_LG_1bit:inst:6:comp.B
-B[10] => Comparator_LG_1bit:inst:5:comp.B
-B[11] => Comparator_LG_1bit:inst:4:comp.B
-B[12] => Comparator_LG_1bit:inst:3:comp.B
-B[13] => Comparator_LG_1bit:inst:2:comp.B
-B[14] => Comparator_LG_1bit:inst:1:comp.B
-B[15] => Comparator_LG_1bit:inst:0:comp.B
-l <= Comparator_LG_1bit:inst:15:comp.l
-g <= Comparator_LG_1bit:inst:15:comp.g
+A[0] => Comparator_LG_1bit:inst:14:comp.A
+A[1] => Comparator_LG_1bit:inst:13:comp.A
+A[2] => Comparator_LG_1bit:inst:12:comp.A
+A[3] => Comparator_LG_1bit:inst:11:comp.A
+A[4] => Comparator_LG_1bit:inst:10:comp.A
+A[5] => Comparator_LG_1bit:inst:9:comp.A
+A[6] => Comparator_LG_1bit:inst:8:comp.A
+A[7] => Comparator_LG_1bit:inst:7:comp.A
+A[8] => Comparator_LG_1bit:inst:6:comp.A
+A[9] => Comparator_LG_1bit:inst:5:comp.A
+A[10] => Comparator_LG_1bit:inst:4:comp.A
+A[11] => Comparator_LG_1bit:inst:3:comp.A
+A[12] => Comparator_LG_1bit:inst:2:comp.A
+A[13] => Comparator_LG_1bit:inst:1:comp.A
+A[14] => Comparator_LG_1bit:inst:0:comp.A
+A[15] => L.IN0
+A[15] => L.IN1
+A[15] => G.IN0
+A[15] => G.IN1
+B[0] => Comparator_LG_1bit:inst:14:comp.B
+B[1] => Comparator_LG_1bit:inst:13:comp.B
+B[2] => Comparator_LG_1bit:inst:12:comp.B
+B[3] => Comparator_LG_1bit:inst:11:comp.B
+B[4] => Comparator_LG_1bit:inst:10:comp.B
+B[5] => Comparator_LG_1bit:inst:9:comp.B
+B[6] => Comparator_LG_1bit:inst:8:comp.B
+B[7] => Comparator_LG_1bit:inst:7:comp.B
+B[8] => Comparator_LG_1bit:inst:6:comp.B
+B[9] => Comparator_LG_1bit:inst:5:comp.B
+B[10] => Comparator_LG_1bit:inst:4:comp.B
+B[11] => Comparator_LG_1bit:inst:3:comp.B
+B[12] => Comparator_LG_1bit:inst:2:comp.B
+B[13] => Comparator_LG_1bit:inst:1:comp.B
+B[14] => Comparator_LG_1bit:inst:0:comp.B
+B[15] => L.IN1
+B[15] => G.IN1
+B[15] => G.IN1
+B[15] => L.IN1
+L <= L.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Comparator_LG_16bit|Comparator_LG_1bit:\inst:0:comp
@@ -288,24 +294,6 @@ g <= g.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Comparator_LG_16bit|Comparator_LG_1bit:\inst:14:comp
-A => e.IN0
-A => g.IN0
-A => l.IN0
-B => e.IN1
-B => l.IN1
-B => g.IN1
-ie => l.IN1
-ie => g.IN1
-il => e.IN0
-il => g.IN1
-ig => e.IN1
-ig => l.IN1
-e <= e.DB_MAX_OUTPUT_PORT_TYPE
-l <= l.DB_MAX_OUTPUT_PORT_TYPE
-g <= g.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Comparator_LG_16bit|Comparator_LG_1bit:\inst:15:comp
 A => e.IN0
 A => g.IN0
 A => l.IN0
